@@ -10,5 +10,5 @@
 - 安装了oh-my-zsh
 - 将所有涉及apt的操作合为一句RUN以避免缓存文件出现在docker的层叠卷中
 - 生成了中文locale支持，在终端中中文的输入与输出都不会乱码了
-- 安装了cnpm
-- yarn切换为淘宝源
+- 安装了nrm，并用其将npm的registry切换为cnpm
+- 安装了yrs，并用其将yarn的registry切换为cnpm

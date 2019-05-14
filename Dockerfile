@@ -35,13 +35,8 @@ ENV DEBIAN_FRONTEND=dialog
 # Install Oh-My-Zsh
 RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install eslint
-RUN npm install -g eslint
+# Install eslint nrm yrs
+RUN npm install -g eslint nrm yrs
 
-# Install cnpm
-#RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
-# 在docker hub构建切记不要用taobao源先啊，血的教训
-RUN npm install -g cnpm
-
-# Set yarn registry to taobao registry
-RUN yarn config set registry 'https://registry.npm.taobao.org'
+# Set npm & yarn registry to cnpm
+RUN nrm use cnpm && yrs use cnpm
