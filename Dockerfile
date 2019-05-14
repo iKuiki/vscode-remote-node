@@ -39,7 +39,9 @@ RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/too
 RUN npm install -g eslint
 
 # Install cnpm
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+#RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
+# 在docker hub构建切记不要用taobao源先啊，血的教训
+RUN npm install -g cnpm
 
 # Set yarn registry to taobao registry
 RUN yarn config set registry 'https://registry.npm.taobao.org'
