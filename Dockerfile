@@ -11,8 +11,8 @@ RUN apt-get update \
    && apt-get -y install --no-install-recommends apt-utils 2>&1 \
    # Configure apt
    # ENV DEBIAN_FRONTEND=noninteractive
-   # Install git, process tools, zsh, locales, git-flow
-   && apt-get -y install git procps zsh less locales git-flow \
+   # Install git, process tools, zsh, locales, git-flow vim
+   && apt-get -y install git procps zsh less locales git-flow vim \
    # Remove outdated yarn from /opt and install via package
    # so it can be easily updated via apt-get upgrade yarn
    && rm -rf /opt/yarn-* \
