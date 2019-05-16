@@ -40,3 +40,6 @@ RUN npm install -g eslint nrm yrs
 
 # Set npm & yarn registry to cnpm
 RUN nrm use cnpm && yrs use cnpm
+
+# Set time zone
+ENV TZ=Asia/Shanghai

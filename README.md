@@ -12,3 +12,4 @@
 - 生成了中文locale支持，在终端中中文的输入与输出都不会乱码了
 - 安装了nrm，并用其将npm的registry切换为cnpm
 - 安装了yrs，并用其将yarn的registry切换为cnpm
+- 时区设置为+0800
