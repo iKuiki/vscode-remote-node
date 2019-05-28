@@ -13,3 +13,4 @@
 - 安装了nrm，并用其将npm的registry切换为cnpm
 - 安装了yrs，并用其将yarn的registry切换为cnpm
 - 时区设置为+0800
+- 设置默认shell为zsh
