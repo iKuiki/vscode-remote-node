@@ -8,7 +8,7 @@
 
 - 通过apt多安装了zsh less locales git-flow vim这五个组件
 - 安装了oh-my-zsh
-- 将所有涉及apt的操作合为一句RUN以避免缓存文件出现在docker的层叠卷中
+- ~~将所有涉及apt的操作合为一句RUN以避免缓存文件出现在docker的层叠卷中~~ 官方也已经合并
 - 生成了中文locale支持，在终端中中文的输入与输出都不会乱码了
 - 安装了nrm，并用其将npm的registry切换为cnpm
 - 安装了yrs，并用其将yarn的registry切换为cnpm
