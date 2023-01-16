@@ -1,0 +1,16 @@
+kind: pipeline
+type: docker
+name: build
+
+steps:
+- name: docker
+  image: plugins/docker
+  pull: if-not-exists
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: ikuiki/vscode-remote-node
+    tags:
+    - latest
